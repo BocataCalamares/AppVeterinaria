@@ -1,4 +1,6 @@
 package com.azahartech.modelo;
 
-public record Consulta(int id_paciente) {
+import java.time.LocalDate;
+
+public record Consulta(int id_paciente, int id_consulta, LocalDate fecha, String motivo, String diagnostico, String tratamiento) {
 }
