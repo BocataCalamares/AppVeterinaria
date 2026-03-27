@@ -26,10 +26,10 @@ public class ServicioPaciente {
                             rs.getInt("id"),
                             rs.getString("nombre"),
                             rs.getString("especie"),
-                            rs.getString("raza"),
                             rs.getInt("edad"),
-                            rs.getInt("peso"),
-                            rs.getString("propietario")
+                            rs.getString("propietario"),
+                            rs.getString("raza"),
+                            rs.getInt("peso")
                     );
                     // 2. Ahora 'p' es un objeto. Podemos imprimirlo directamente
                     // gracias al toString() autom·tico de los Records.
