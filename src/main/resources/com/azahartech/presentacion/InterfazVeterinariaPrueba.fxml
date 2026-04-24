@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F272E3;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.azahartech.modelo.PacienteController">
+   <children>
+      <Button id="btnGuardar" fx:id="guardarButton" layoutX="446.0" layoutY="345.0" mnemonicParsing="false" style="-fx-background-color: #9AE5F5;" text="Guardar Paciente" />
+      <Label layoutX="38.0" layoutY="135.0" text="Nombre" />
+      <TextField id="fieldNombre" fx:id="nombrePaciente" layoutX="91.0" layoutY="131.0" promptText="*nombre paciente*" />
+      <TextField id="fieldPropietario" fx:id="nombrePropietario" layoutX="346.0" layoutY="131.0" promptText="*DNI propietario*" />
+      <TextField id="fieldEspecie" layoutX="90.0" layoutY="177.0" promptText="*especie animal*" />
+      <Label layoutX="275.0" layoutY="135.0" text="Propietario" />
+      <Label layoutX="46.0" layoutY="229.0" text="Edad" />
+      <Label layoutX="37.0" layoutY="181.0" text="Especie" />
+      <Label layoutX="309.0" layoutY="181.0" text="Raza" />
+      <Label layoutX="48.0" layoutY="277.0" text="Peso" />
+      <TextField id="fieldRaza" layoutX="346.0" layoutY="177.0" promptText="*raza animal*" />
+      <Label alignment="CENTER" layoutX="63.0" layoutY="44.0" prefHeight="49.0" prefWidth="449.0" text="VETERINARIA JRA" textAlignment="CENTER" textFill="#0d0d0d">
+         <font>
+            <Font name="Lohit Tamil Classical" size="26.0" />
+         </font>
+      </Label>
+      <TextField id="fieldEdad" layoutX="90.0" layoutY="225.0" promptText="*Edad(Años)*" />
+      <TextField id="fieldPeso" layoutX="90.0" layoutY="273.0" promptText="*Peso(Kg)*" />
+   </children>
+</Pane>
