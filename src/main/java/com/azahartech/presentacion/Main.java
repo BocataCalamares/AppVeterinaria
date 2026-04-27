@@ -49,7 +49,7 @@ public class Main extends Application {
             Paciente p = new Paciente(0, nombre, especie, edad, propietario, raza, peso);
             // 2. Creamos la query con "?" y usamos PreparedStatement para insertar
             // vinculamos cada dato con la query mediante los métodos setString, setInt, etc...
-            String sql = "INSERT INTO pacientes (nombre, especie, raza, edad, peso, propietario) VALUES (?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO pacientestest (nombre, especie, raza, edad, peso, propietario) VALUES (?, ?, ?, ?, ?, ?)";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, nombre);
             pst.setString(2, especie);
