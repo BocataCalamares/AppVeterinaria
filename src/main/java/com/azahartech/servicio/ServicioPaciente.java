@@ -44,6 +44,10 @@ public class ServicioPaciente {
         }
     }
 
+    /**
+     *
+     * @param con
+     */
     public static void insertPaciente(Connection con){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce el nombre del paciente");

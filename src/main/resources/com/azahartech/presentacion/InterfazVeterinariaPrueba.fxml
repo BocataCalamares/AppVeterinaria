@@ -26,5 +26,6 @@
       </Label>
       <TextField fx:id="fieldEdad" layoutX="90.0" layoutY="225.0" promptText="*Edad(Años)*" />
       <TextField fx:id="fieldPeso" layoutX="90.0" layoutY="273.0" promptText="*Peso(Kg)*" />
+      <Button fx:id="btnLista" layoutX="48.0" layoutY="345.0" mnemonicParsing="false" onAction="#abrirLista" style="-fx-background-color: #9AE5F5;" text="Lista Pacientes" />
    </children>
 </Pane>

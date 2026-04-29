@@ -65,6 +65,19 @@ public class Main extends Application {
             System.err.println("ERROR 2- No se pudo crear el Statement: " + e.getMessage());
         }
     };
+    public static void abrirLista() {
+        try {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("InterfazPacientes.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Veterinaria JRA — Lista de Pacientes");
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (Exception e) {
+            System.err.println("Error al abrir lista de pacientes: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
     @Override
     public void start(Stage primaryStage) {
         testConnection();

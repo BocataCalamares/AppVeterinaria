@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="500.0" prefWidth="800.0"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.azahartech.modelo.PacientesListaController"
+      style="-fx-background-color: #F0F8FF;">
+
+    <children>
+
+        <!-- Cabecera -->
+        <HBox alignment="CENTER_LEFT" style="-fx-background-color: #9AE5F5; -fx-padding: 10;">
+            <children>
+                <Label text="VETERINARIA JRA — Lista de Pacientes" style="-fx-text-fill: #0d0d0d;">
+                    <font><Font name="System Bold" size="20.0" /></font>
+                </Label>
+            </children>
+        </HBox>
+
+        <!-- Tabla de pacientes: cada columna tiene fx:id para que el controlador pueda inyectarla -->
+        <TableView fx:id="tablaPacientes" VBox.vgrow="ALWAYS" style="-fx-padding: 10;">
+            <columns>
+                <TableColumn fx:id="colId"          text="ID"          prefWidth="50.0"  />
+                <TableColumn fx:id="colNombre"      text="Nombre"      prefWidth="140.0" />
+                <TableColumn fx:id="colEspecie"     text="Especie"     prefWidth="110.0" />
+                <TableColumn fx:id="colRaza"        text="Raza"        prefWidth="110.0" />
+                <TableColumn fx:id="colEdad"        text="Edad (años)" prefWidth="100.0" />
+                <TableColumn fx:id="colPeso"        text="Peso (kg)"   prefWidth="90.0"  />
+                <TableColumn fx:id="colPropietario" text="Propietario" prefWidth="170.0" />
+            </columns>
+        </TableView>
+
+        <!-- Botón de recarga -->
+        <HBox alignment="CENTER_RIGHT" style="-fx-padding: 8;">
+            <children>
+                <Button text="↻ Recargar lista"
+                        onAction="#recargarPacientes"
+                        style="-fx-background-color: #9AE5F5;" />
+            </children>
+        </HBox>
+
+    </children>
+</VBox>

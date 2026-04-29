@@ -1,9 +1,7 @@
 package com.azahartech.modelo;
 
 import com.azahartech.presentacion.Main;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 import java.sql.PreparedStatement;
@@ -59,5 +57,9 @@ public class PacienteController {
         fieldEdad.clear();
         fieldRaza.clear();
         fieldPeso.clear();
+    }
+    @FXML
+    public void abrirLista() {
+        Main.abrirLista();
     }
 }
