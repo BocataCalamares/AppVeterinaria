@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 public class PacienteController {
 
-    // Estos nombres deben ser IGUALES a los fx:id del FXML
+
     @FXML private TextField nombrePaciente;    // Corresponde a fx:id="nombrePaciente"
     @FXML private TextField nombrePropietario; // Corresponde a fx:id="nombrePropietario"
     @FXML private TextField fieldEspecie;
@@ -18,7 +18,7 @@ public class PacienteController {
     @FXML private TextField fieldPeso;
 
     public void accionGuardar() {
-        // Asegúrate de que el nombre de la tabla sea 'pacientes' o 'pacientestest' según tu DB
+
         String sql = "INSERT INTO pacientestest (nombre, especie, edad, raza, peso, propietario) VALUES(?,?,?,?,?,?)";
 
         try (PreparedStatement ps = Main.con.prepareStatement(sql)) {
