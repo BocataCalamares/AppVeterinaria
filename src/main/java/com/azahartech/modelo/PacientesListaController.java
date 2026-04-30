@@ -64,9 +64,9 @@ public class PacientesListaController {
                 new javafx.beans.property.SimpleStringProperty(data.getValue().propietario()));
     }
 
-    /**
-     * Consulta la BD y rellena la tabla.
-     */
+//
+//      Consulta la BD y rellena la tabla.
+//
     private void cargarDatos() {
         ObservableList<Paciente> lista = FXCollections.observableArrayList();
 

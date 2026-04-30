@@ -16,7 +16,7 @@
 
     <children>
 
-        <!-- Cabecera -->
+
         <HBox alignment="CENTER_LEFT" style="-fx-background-color: #9AE5F5; -fx-padding: 10;">
             <children>
                 <Label text="VETERINARIA JRA — Lista de Pacientes" style="-fx-text-fill: #0d0d0d;">
@@ -25,7 +25,7 @@
             </children>
         </HBox>
 
-        <!-- Tabla de pacientes: cada columna tiene fx:id para que el controlador pueda inyectarla -->
+
         <TableView fx:id="tablaPacientes" VBox.vgrow="ALWAYS" style="-fx-padding: 10;">
             <columns>
                 <TableColumn fx:id="colId"          text="ID"          prefWidth="50.0"  />
@@ -38,7 +38,7 @@
             </columns>
         </TableView>
 
-        <!-- Botón de recarga -->
+
         <HBox alignment="CENTER_RIGHT" style="-fx-padding: 8;">
             <children>
                 <Button text="↻ Recargar lista"
